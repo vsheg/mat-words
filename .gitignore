@@ -1,0 +1,6 @@
+.pytest_cache
+logs/
+__pycache__
+
+# Ignore dynaconf secret files
+.secrets.*

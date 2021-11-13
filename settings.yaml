@@ -1,0 +1,16 @@
+crawler:
+  base_url: https://api.vk.com
+  vk_api_version: 5.131
+  first_chunk_size: 100
+  rest_chunks_size: 1000
+  # you have to define 'stored functions' for your app on vk.com in order to call `execute` method
+  stored_functions:
+    get_posts: getPosts
+    get_comments: getComments
+  # you have to define following variables in `.secrets.yaml`
+  vk_app_id: TO_REDEFINE
+  vk_app_token: TO_REDEFINE
+  vk_app_secret: TO_REDEFINE
+  vk_user_token: TO_REDEFINE
+  timeout: 60
+  sleep_time: 1
